@@ -40,7 +40,7 @@ namespace CalculadoraWindows
                 double number;
                 if (double.TryParse(this.resultText.Text, out number))
                 {
-                    this.resultText.Text = number.ToString("NO");
+                    this.resultText.Text = number.ToString("N0");
                     if (currentState == 1)
                     {
                         firsNumber = number;
@@ -51,6 +51,40 @@ namespace CalculadoraWindows
                     }
                 }
             } 
+        }
+        void OnSelectOperator(object sender, EventArgs e)
+        {
+            currentState = -2;
+            Button button = (Button)sender;
+            string pressed = button.Text;
+            mathOperator = pressed;
+        }
+        void OnCalculate(object sender, EventArgs e)
+        {
+            if (currentState == 2)
+            {
+                double result = 0;
+                if (mathOperator == "+")
+                {
+                    result = firsNumber + secondNumber;
+                }
+                if (mathOperator == "-")
+                {
+                    result = firsNumber - secondNumber;
+                }
+                if (mathOperator == "X")
+                {
+                    result = firsNumber * secondNumber;
+                }
+                if (mathOperator == "/")
+                {
+                    result = firsNumber / secondNumber;
+                }
+
+                this.resultText.Text = result.ToString("N0");
+                firsNumber = result;
+                currentState = -1;
+            }
         }
 
         public MainPage()
