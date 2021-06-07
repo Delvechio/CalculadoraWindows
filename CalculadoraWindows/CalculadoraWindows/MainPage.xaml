@@ -25,44 +25,45 @@
                    LineBreakMode="NoWrap" Grid.ColumnSpan="4" Grid.Row="0"/>
             <!--************************BOTÃOS 7,8,9,/ LINHA 1******************************************-->
             <Button Text="9" Grid.Row="1" Grid.Column="2" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
             <Button Text="8" Grid.Row="1" Grid.Column="1" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
             <Button Text="7" Grid.Row="1" Grid.Column="0" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
             <Button Text="/" Grid.Row="1" Grid.Column="3" BackgroundColor="Orange"
-                    TextColor="White" FontSize="36"/>
+                    TextColor="White" FontSize="36" />
             <!--******************************************************************-->
             <!--************************BOTÃOS 4,5,6,X LINHA 2******************************************-->
             <Button Text="6" Grid.Row="2" Grid.Column="2" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
             <Button Text="5" Grid.Row="2" Grid.Column="1" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
             <Button Text="4" Grid.Row="2" Grid.Column="0" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
             <Button Text="X" Grid.Row="2" Grid.Column="3" BackgroundColor="Orange"
-                    TextColor="White" FontSize="36"/>
+                    TextColor="White" FontSize="36" />
             <!--******************************************************************-->
             <!--************************BOTÃOS 3,2,1,- LINHA 3******************************************-->
             <Button Text="3" Grid.Row="3" Grid.Column="2" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
+            
             <Button Text="2" Grid.Row="3" Grid.Column="1" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
             <Button Text="1" Grid.Row="3" Grid.Column="0" BackgroundColor="White"
-                    TextColor="Black" FontSize="36"/>
+                    TextColor="Black" FontSize="36" Clicked="onSelectNumber"/>
             <Button Text="-" Grid.Row="3" Grid.Column="3" BackgroundColor="Orange"
-                    TextColor="White" FontSize="36"/>
+                    TextColor="White" FontSize="36" />
             <!--******************************************************************-->
             <!--************************BOTÃOS 0,+ LINHA 4******************************************-->
             <Button Text="0" Grid.Row="4" Grid.Column="0" BackgroundColor="White"
-                    TextColor="Black" FontSize="36" Grid.ColumnSpan="1" />
+                    TextColor="Black" FontSize="36" Grid.ColumnSpan="1" Clicked="onSelectNumber" />
             <Button Text="+" Grid.Row="4" Grid.Column="1" BackgroundColor="White"
-                    TextColor="Black" FontSize="36" Grid.ColumnSpan="3"/>
+                    TextColor="Black" FontSize="36" Grid.ColumnSpan="3" />
             <!--BOTÕES C E =-->
             <Button Text="C" Grid.Row="5" Grid.Column="0" BackgroundColor="Gray"
-                    TextColor="White" FontSize="36"/>
+                    TextColor="White" FontSize="36" Clicked="OnClear"/>
             <Button Text="=" Grid.Row="5" Grid.Column="1" BackgroundColor="Orange"
-                    TextColor="White" FontSize="36" Grid.ColumnSpan="3"/>
+                    TextColor="White" FontSize="36" Grid.ColumnSpan="3" />
         </Grid>
     </StackLayout>
 
